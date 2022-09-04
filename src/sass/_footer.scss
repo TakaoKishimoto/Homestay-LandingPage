@@ -1,0 +1,74 @@
+.footer {
+  background-color: $color-secondary-light-1;
+  grid-column: full-start / full-end;
+  padding: 8rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 4rem;
+  }
+
+  &__box {
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  &__logo {
+    height: 12rem;
+    justify-self: start;
+
+    @media only screen and (max-width: $bp-medium) {
+      height: 8rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      gap: 1rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      text-align: center;
+    }
+  }
+
+  &__item {
+    display: block;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: $font-display;
+    color: $color-grey-dark-1;
+    padding: 1.5rem;
+    transition: all 0.4s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    background-color: rgba($color-primary, 0.2);
+    transform: translateY(-3px);
+    border-radius: 10px;
+  }
+
+  &__copyright {
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 3rem;
+  }
+}

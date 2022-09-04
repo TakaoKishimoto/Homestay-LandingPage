@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Icon -->
+    <link rel="icon" href="src/img/vanjapanese-logo.webp" />
+
+    <!-- Font: Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font: Josefin -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/sass/main.scss" />
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <!-- If use module, change into type='module' from defer -->
+    <script defer type="module" src="src/js/script.js"></script>
+
+    <title>Van Japanese Homestay</title>
+  </head>
+  <body class="container">
+    <header id="header" class="header">
+      <a href="#">
+        <img
+          src="src/img/vanjapanese-logo-large.webp"
+          alt="Van Japanese Homestay Logo"
+          class="header__logo"
+        />
+      </a>
+
+      <!-- MAIN NAVIGATION -->
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li><a class="header__nav-link" href="#features">About US</a></li>
+          <li><a class="header__nav-link" href="#process">How to Apply</a></li>
+          <li>
+            <a class="header__nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="header__nav-link" href="#form">Apply Form</a></li>
+        </ul>
+      </nav>
+
+      <button class="header__nav-btn">
+        <img
+          src="src/img/icons8-menu.svg"
+          alt="Nav open icon"
+          class="header__nav--open mb-btn"
+        />
+        <img
+          src="src/img/icons8-close.svg"
+          alt="Nav close icon"
+          class="header__nav--close mb-btn"
+        />
+      </button>
+    </header>
+
+    <section class="hero">
+      <div class="hero__description">
+        <h1 class="heading-1 hero__heading">
+          Homestay Host Family<br />in Vancouver
+        </h1>
+        <p class="hero__heading hero__text">
+          Do you have some vacant rooms? <br />
+          You can use your room effectively!
+        </p>
+        <button class="btn hero__description-btn">Get Started</button>
+      </div>
+      <figure class="hero__item">
+        <img
+          src="src/img/family-img.webp"
+          alt="Host Family image"
+          class="hero__item--img"
+        />
+      </figure>
+    </section>
+
+    <section id="features" class="features">
+      <div class="section__title">
+        <h2 class="section__description">Features</h2>
+        <h3 class="section__header">
+          Everything we offer to you for your great Homestay Host experience
+        </h3>
+      </div>
+
+      <div class="features__box">
+        <div class="feature">
+          <svg class="feature__icon">
+            <use href="src/img/icons.svg#icon-edit"></use>
+          </svg>
+          <h4 class="heading-4">Continuous Placing</h4>
+          <p class="feature__text">
+            Thankfully, Vancouver is one of the best country for study in Japan
+            so we're sure students are going to come next couple of years. That
+            allows us to offer student to you continuously.
+          </p>
+        </div>
+
+        <div class="feature">
+          <svg class="feature__icon">
+            <use href="src/img/icons.svg#icon-clock"></use>
+          </svg>
+          <h4 class="heading-4">Flexible Host Schedule</h4>
+          <p class="feature__text">
+            Our students normally stay around 1~2 months so you can manage your
+            rooms however you want. When your kids is back to your house, you
+            just take a break for Homestay. Easy.
+          </p>
+        </div>
+
+        <div class="feature">
+          <svg class="feature__icon">
+            <use href="src/img/icons.svg#icon-smile"></use>
+          </svg>
+          <h4 class="heading-4">Troubleless Homestay</h4>
+          <p class="feature__text">
+            Our 99% students are coming from Japan. We are proud of the Japanese
+            politeness. We believe that helps your homestay a lot.
+          </p>
+        </div>
+
+        <div class="feature">
+          <svg class="feature__icon">
+            <use href="src/img/icons.svg#icon-user"></use>
+          </svg>
+          <h4 class="heading-4">Homestay Friendly</h4>
+          <p class="feature__text">
+            Our Agency help your Homestay Journey. We communicate our student
+            when something happen during homestay. Also, you can take a break if
+            you are tired of homestay.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="process">
+      <div class="section__title">
+        <h2 class="section__description">Process</h2>
+        <h3 class="section__header">
+          Every Processes are very simple and easy
+        </h3>
+      </div>
+      <div class="process__box">
+        <div class="process__overview">
+          <button
+            class="process__overview-btn process__overview-list process__overview-list--1 process__overview-list--active"
+            data-tab="1"
+          >
+            01 Get Info
+          </button>
+          <button
+            class="process__overview-btn process__overview-list process__overview-list--2"
+            data-tab="2"
+          >
+            02 send Info
+          </button>
+          <button
+            class="process__overview-btn process__overview-list process__overview-list--3"
+            data-tab="3"
+          >
+            03 Inspection
+          </button>
+        </div>
+
+        <div
+          class="process__description process__description--1 process__description--active"
+        >
+          <img
+            src="src/img/icons8-document-64.svg"
+            alt="Document icon"
+            class="process__description-icon"
+          />
+          <div class="process__description-box">
+            <h3 class="process__description-heading">
+              <span>01</span><br />Tell us your basic Info
+            </h3>
+            <p class="process__description-text">
+              First of all, we need your basic information such as your name,
+              email-address, and phone number (optional). <br />Please fill up
+              our apply form in this website and submit it.
+            </p>
+          </div>
+        </div>
+
+        <div class="process__description process__description--2">
+          <img
+            src="src/img/icons8-open-envelope-96.png"
+            alt="Mail icon"
+            class="process__description-icon"
+          />
+          <div class="process__description-box">
+            <h3 class="process__description-heading">
+              <span>02</span><br />Fill up and Send the applications back to us
+            </h3>
+            <p class="process__description-text">
+              Once you get our applications for Homestay Host family, read our
+              homestay rules and details. If you agree with them, please fill in
+              your detail information and send them back to us.
+            </p>
+          </div>
+        </div>
+
+        <div class="process__description process__description--3">
+          <img
+            src="src/img/icons8-checkmark-64.svg"
+            alt="Inspection icon"
+            class="process__description-icon"
+          />
+          <div class="process__description-box">
+            <h3 class="process__description-heading">
+              <span>03</span><br />Inspection and Place the student
+            </h3>
+            <p class="process__description-text">
+              After we receive your application, we will visit you an
+              inspection. If you pass the inspection, you are finally a new
+              homestay host family.<br />
+              We will place the student to your house!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonial">
+      <div class="section__title testimonial__title">
+        <h2 class="section__description">Testimonials</h2>
+        <h3 class="section__header">
+          Our Hosts are already spending great time with the students.
+        </h3>
+      </div>
+
+      <div class="testimonial__slider">
+        <div class="testimonial__slide">
+          <div class="testimonial__slide-box">
+            <h3 class="testimonial__header">
+              They are polite, cleaness, and interesting.
+            </h3>
+            <blockquote class="testimonial__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              dolores ab, qui facilis eligendi maiores, minima quae, nostrum
+              sint temporibus iure minus nulla quibusdam quisquam? Minus
+              explicabo odit non nobis?
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="src/img/user-2.jpg"
+                alt=""
+                class="testimonial__author-photo"
+              />
+              <h4 class="testimonial__author-name">Elena Sinfoney</h4>
+              <p class="testimonial__author-location">Vancouver, BC</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="testimonial__slide">
+          <div class="testimonial__slide-box">
+            <h3 class="testimonial__header">
+              This is the best experience in my life!
+            </h3>
+            <blockquote class="testimonial__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              dolores ab, qui facilis eligendi maiores, minima quae, nostrum
+              sint temporibus iure minus nulla quibusdam quisquam? Minus
+              explicabo odit non nobis?
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="src/img/user-3.jpg"
+                alt="User testimonial"
+                class="testimonial__author-photo"
+              />
+              <h4 class="testimonial__author-name">John Coll</h4>
+              <p class="testimonial__author-location">Vancouver, BC</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="testimonial__slide">
+          <div class="testimonial__slide-box">
+            <h3 class="testimonial__header">
+              I'm impressive how good the organization is.
+            </h3>
+            <blockquote class="testimonial__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              dolores ab, qui facilis eligendi maiores, minima quae, nostrum
+              sint temporibus iure minus nulla quibusdam quisquam? Minus
+              explicabo odit non nobis?
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="src/img/user-1.jpg"
+                alt="User testimonial"
+                class="testimonial__author-photo"
+              />
+              <h4 class="testimonial__author-name">Alex Rodorigo</h4>
+              <p class="testimonial__author-location">Vancouver, BC</p>
+            </address>
+          </div>
+        </div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+      </div>
+    </section>
+
+    <section id="form" class="cta">
+      <div class="cta__img">
+        <img
+          src="src/img/family-seaside.webp"
+          alt="Family seaside image"
+          class="cta__img--1 cta__img--up"
+        />
+        <img
+          src="src/img/vancouver-seaside.webp"
+          alt="Vancouver Downtown image"
+          class="cta__img--2 cta__img--up"
+        />
+      </div>
+
+      <div class="cta__form-box">
+        <h2 class="heading-2 cta__form-heading">
+          Become the Homestay<br />
+          Host Family!
+        </h2>
+        <form method="POST" class="form">
+          <div>
+            <label class="form__label" for="full-name">Full Name</label>
+            <input
+              class="form__input"
+              name="entry.1379930440"
+              id="full-name"
+              type="text"
+              placeholder="John Coll"
+              pattern="[a-zA-Z0-9]+ [a-zA-Z0-9]+"
+              required
+            />
+          </div>
+
+          <div>
+            <label class="form__label" for="phone">Phone</label>
+            <input
+              class="form__input"
+              name="entry.599732507"
+              id="phone"
+              type="tel"
+              placeholder="000-000-0000"
+              pattern="[\d\-]*"
+              maxlength="14"
+              required
+            />
+          </div>
+
+          <div class="mb-sm">
+            <label class="form__label" for="email">Email</label>
+            <input
+              class="form__input"
+              name="entry.1985882477"
+              id="email"
+              type="email"
+              placeholder="me@example.com"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              required
+            />
+          </div>
+          <button class="btn form__btn" type="submit">Submit your Info</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__box">
+        <img
+          src="src/img/vanjapanese-logo-large.webp"
+          alt="Van Japanese logo"
+          class="footer__logo"
+        />
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">Company</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Contact us</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Carrers</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Privacy policy</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Terms</a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer__copyright">Copyright &copy; by Takao Kishimoto.</p>
+    </footer>
+  </body>
+</html>

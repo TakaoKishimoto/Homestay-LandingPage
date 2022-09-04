@@ -1,0 +1,178 @@
+.testimonial {
+  grid-column: full-start / full-end;
+  background-color: $color-secondary-light-1;
+  padding: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 7rem 0 3rem 0;
+  }
+
+  &::before {
+    content: "\201C";
+    position: absolute;
+    top: 25rem;
+    left: 15%;
+    line-height: 1;
+    font-size: 20rem;
+    font-family: inherit;
+    color: $color-primary;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 15rem;
+      left: 8%;
+    }
+    @media only screen and (max-width: $bp-small) {
+      font-size: 12rem;
+      top: 25%;
+      left: 8%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 12rem;
+      top: 30%;
+      left: 6%;
+    }
+  }
+
+  &__title {
+    padding: 0 4rem;
+  }
+
+  &__slider {
+    width: 100%;
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      height: 40rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      height: 50rem;
+    }
+  }
+
+  &__slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding: 3rem 7rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: transform 0.8s;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 0 3rem;
+    }
+
+    &-box {
+      width: 60%;
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 70%;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        width: 80%;
+      }
+    }
+  }
+
+  &__header {
+    font-size: 2.4rem;
+    color: $color-grey-dark-1;
+    line-height: 1.2;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    color: $color-grey-dark-2;
+    line-height: 1.4;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 2rem;
+      line-height: 1.6;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      line-height: 1.5;
+    }
+  }
+
+  &__author {
+    display: grid;
+    grid-template-columns: 6.5rem 1fr;
+    column-gap: 2rem;
+
+    &-photo {
+      grid-row: 1 / span 2;
+      width: 6.5rem;
+      border-radius: 50%;
+    }
+
+    &-name {
+      font-size: 1.6rem;
+      font-weight: 500;
+      align-self: end;
+    }
+
+    &-location {
+      font-size: 1.4rem;
+      color: $color-grey-light-1;
+    }
+  }
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 999;
+
+  border: none;
+  background: rgba($color-white, 0.7);
+  font-family: inherit;
+  color: #333;
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+  font-size: 3rem;
+  cursor: pointer;
+
+  &--left {
+    left: 10%;
+    transform: translate(-50%, -50%);
+
+    @media only screen and (max-width: $bp-small) {
+      top: 90%;
+      left: 40%;
+    }
+  }
+
+  &--right {
+    right: 10%;
+    transform: translate(50%, -50%);
+
+    @media only screen and (max-width: $bp-small) {
+      top: 90%;
+      right: 40%;
+    }
+  }
+}

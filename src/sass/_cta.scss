@@ -1,0 +1,139 @@
+.cta {
+  grid-column: full-start / full-end;
+  padding: 10rem 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  &__img {
+    max-width: 40%;
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    overflow: hidden;
+
+    @media only screen and (max-width: $bp-medium) {
+      max-width: 70%;
+    }
+
+    &--1 {
+      width: 90%;
+      object-fit: fill;
+      grid-row: 3 / 10;
+      grid-column: 2 / 9;
+      align-self: center;
+      justify-self: center;
+      display: block;
+      border-radius: 5px;
+      z-index: 1;
+      box-shadow: 0 1.6rem 1.6rem rgba($color-primary-dark, 0.1);
+
+      @media only screen and (max-width: $bp-medium) {
+        grid-column: 3 / 10;
+      }
+
+      &:hover {
+        outline: none;
+        transform: translateY(-1rem) scale(1.03);
+        z-index: 20;
+      }
+    }
+
+    &--2 {
+      width: 90%;
+      grid-row: 6 / 11;
+      grid-column: 6 / 11;
+      display: block;
+      border-radius: 5px;
+      z-index: 10;
+      box-shadow: 0 1.6rem 1.6rem rgba($color-primary-dark, 0.1);
+
+      @media only screen and (max-width: $bp-medium) {
+        grid-column: 7 / 12;
+      }
+    }
+
+    &--up {
+      transition: all 0.3s;
+    }
+
+    &--up:hover {
+      transform: translateY(-1rem) scale(1.02);
+      box-shadow: 0 1.2rem 1.2rem rgba($color-primary-dark, 0.2);
+      z-index: 20;
+    }
+  }
+
+  &__form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-self: center;
+    align-self: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin: 0 auto;
+      padding-bottom: 8rem;
+      gap: 2rem;
+    }
+
+    &-heading {
+      color: $color-grey-dark-1;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  &__label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: block;
+    transition: all 0.3s;
+  }
+
+  &__input {
+    font-size: 1.6rem;
+    font-family: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 7px;
+    background-color: rgba($color-secondary, 0.4);
+    border: none;
+    width: 90%;
+    display: block;
+    overflow: hidden;
+    transition: all 0.3s;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid $color-secondary-dark-2;
+
+      &:invalid {
+        border-bottom: 3px solid $color-primary-dark-2;
+      }
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+    }
+  }
+
+  &__btn {
+    align-self: start;
+
+    @media only screen and (max-width: $bp-medium) {
+      align-self: center;
+    }
+  }
+}
